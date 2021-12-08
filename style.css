@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+body {
+  background-image: url(GRID_TABLAZAT/kepek/hatter.jpg);
+  font-family: "Josefin Sans", sans-serif;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "h h h h h"
+    "n a a as as"
+    "f f f f f";
+  margin: auto;
+  max-width: 800px;
+  background-color: rgb(217, 223, 255);
+}
+header {
+  grid-area: h;
+  background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
+  color: whitesmoke;
+  text-align: center;
+  height: 150px;
+  text-shadow: 2px 2px #000000;
+  border-bottom: 3px solid rgb(27, 143, 143);
+}
+header h1 {
+  padding-top: 70px;
+}
+nav {
+  grid-area: n;
+}
+nav ul li {
+  margin: 10px;
+  padding: 6px;
+  background-color: royalblue;
+  text-align: center;
+  border-radius: 10px;
+  width: 150px;
+}
+li a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 2px 2px #000000;
+}
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+}
+article {
+  grid-area: a;
+  padding: 10px;
+}
+div {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+aside {
+  grid-area: as;
+  text-align: justify;
+  border-left: 3px solid rgb(27, 143, 143);
+}
+aside p {
+  padding: 20px;
+  padding-top: 5px;
+}
+aside h2 {
+  padding: 20px;
+  padding-bottom: 5px;
+}
+footer {
+  grid-area: f;
+  text-align: center;
+  background-color: rgb(27, 143, 143);
+}
+img {
+  width: 150px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+.jobb {
+  float: left;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+.bal {
+  float: left;
+  -ms-transform: rotate(-8deg);
+  -webkit-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+#lejjebb {
+  padding-top: 90px;
+}
+table tr:nth-child(even) {
+  background-color: teal;
+  color: white;
+}
+table tr {
+  width: 20px;
+  height: 10px;
+}
+table td, table th{
+    padding: 5px;
+}
+table{
+    border-collapse: collapse;
+}
+@media screen and (max-width: 600px) {
+  main {
+    grid-template-areas:
+      "h"
+      "n"
+      "a"
+      "as"
+      "f";
+  }
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+}
